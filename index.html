@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container" id="border">
     <h4 class="container">Calculator</h4><br>
     <div class="container"><input type="text" id="input"/></div><br>
     <div class="container">
@@ -34,12 +35,13 @@
     <button onclick="disp('%')" class="btn btn-primary" id="%">%</button>
     </div><br>
     <div class="container">
-        <button onclick="disp('(')" class="btn btn-primary" id="(">(</button>
-        <button onclick="disp(')')" class="btn btn-primary" id=")">)</button>
         <button onclick="eq()" class="btn btn-primary">=</button>
-        <button onclick="disp('.')" class="btn btn-primary">.</button>
-        <button onclick="clear()" class="btn btn-primary">C</button>
-    </div>
+        <button onclick="disp('.')" class="btn btn-primary" id="(">.</button>
+        <button onclick="disp('**')" class="btn btn-primary" id=")">^</button>
+        <button onclick="document.getElementById('input').value=document.getElementById('input').value.slice(0,document.getElementById('input').value.length-1)" class="btn btn-primary">←</button>
+        <button onclick="document.getElementById('input').value=''" class="btn btn-primary">C</button>
+    </div><br>
+</table>
     <script src="script.js"></script>
 </body>
 </html>
