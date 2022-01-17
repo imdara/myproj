@@ -6,8 +6,3 @@ function eq() {
     let res=eval(final);
     document.getElementById("input").value=res;
 }
-
-function clear() {   
-    document.getElementById("input").value="";
-    console.log("hello");
-}
