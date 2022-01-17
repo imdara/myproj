@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+.btn-primary{
+    width: 45px;
+    background-color:rgb(17, 73, 87);
+}
+
+#input{
+    width: 245px;
+}
